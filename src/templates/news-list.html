@@ -1,0 +1,7 @@
+<div>
+    <ul class="newsList">
+        <li ng-repeat="article in $ctrl.articles">
+            <a ui-sref="articleUpdate({id:article._id})"><h1>{{article.title}}</h1></a>
+        </li>
+    </ul>
+</div>
