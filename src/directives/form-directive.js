@@ -3,6 +3,8 @@ export default function addArticleDirective() {
     return {
         restrict: 'E',
         template: require('../templates/add-article.html'),
-        controller: 'AppCtrl'
+        link: function ($scope, elements, attrs) {
+            console.log($scope);
+        }
     }
 }
